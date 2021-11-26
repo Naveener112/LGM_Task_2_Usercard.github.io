@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.imgdiv{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgdiv img{
+    display: block;
+    width: 50%;
+    height: 50%;
+    padding-top: 10rem;
+
+}
+
+.bg{
+    position: relative;
+    width: 100%;
+    background: linear-gradient(180deg, #7D28F3 0%, #ee0b97 100%);
+
+}
+
+
+.card{
+    position: relative;
+    width: 70%;
+    height: 26rem;
+    border-radius: 1rem;
+    border-style: none;
+    margin: auto;
+    background: url('https://media.istockphoto.com/videos/multiple-abstract-shapes-moving-against-blue-background-video-id1280015962?b=1&k=20&m=1280015962&s=640x640&h=g8Eml8Hdroc8J832DLYInA1kCuAN3rBdYINRaDmWTdM=');
+    transition: ease-in-out 0.2s;
+    margin-bottom: 1rem;
+    
+} 
+
+.card:hover{
+    transform: translatey(-0.2rem);
+}
+
+.card .content{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+
+}
+.card img{
+    position: relative;
+    width: 11.6rem;
+    height: 11.6rem;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 2rem;
+    transition: ease-in-out 0.2s;
+
+}
+
+.card::before{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 7rem;
+    width: 7rem;
+    left: 11rem;
+    top: 8rem;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #ff109c;
+
+}
+
+
+.card .content h2{
+    color: #faebd7;
+    font-size: 1.4rem;
+    letter-spacing: .10rem;
+    padding: .4rem;
+    width: 70%;
+    margin: auto;
+    background: #ee0b97;
+    border-radius: 5rem;
+    margin-top: 1.2rem;
+}
+
+.card .content a{
+    color: #ffffff;
+    font-size: 1.2rem;
+    letter-spacing: .02rem;
+    text-decoration: none;
+    
+}
+
+@media screen and (max-width: 700px){
+    .card{
+        width: 90%;
+    }
+    .card .content h2{
+        font-size: 1.2rem;
+    }
+    .card .content h5{
+        font-size: 1rem;
+    }
+    .imgdiv img{
+        width: 100%;
+        height: 100%;
+    }
+    .card::before{
+        left: 8rem;
+        top: 8rem;
+    
+    }
+}

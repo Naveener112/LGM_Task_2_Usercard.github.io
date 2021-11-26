@@ -1,0 +1,46 @@
+.navbar{
+    background: linear-gradient(to right,#fc0bac 0%,#05ffde 100%);
+}
+
+.navbar-brand{
+    position: relative;
+    font-weight: 700;
+    letter-spacing: .1rem;
+}
+
+.navbar-brand::after{
+    content: '';
+    position: absolute;
+    width: 35%;
+    height: 0.1rem;
+    top: .6rem;
+    left: -1.2rem;
+    background: #ffffff;
+    transform: rotate(-40deg);
+
+}
+
+.navbar-brand::before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 0.1rem;
+    bottom: 0;
+    right: 0;
+    background: #ffffff;
+
+}
+
+.btn{
+    border-radius: 2rem;
+    background: linear-gradient(to right, #7D28F3, #ff0c9a);
+    color: #fff;
+    border-style: none;
+
+}
+
+.btn:hover{
+    background: linear-gradient(180deg, #7D28F3 0%, #ee0b97 100%);
+    border-style: none;
+    color: #ffffff;
+}
