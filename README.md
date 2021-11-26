@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was Awailable on https://serene-heisenberg-8c8322.netlify.app/
+This project was Awailable on https://hardcore-wing-c8a9d6.netlify.app/
 
 ## Available Scripts
 
